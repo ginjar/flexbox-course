@@ -1,0 +1,14 @@
+To create repo:
+
+git init
+git add . 
+git commit -m "first commit"
+copy and paste from github repo, last three
+
+
+
+After creation, general changes to push:
+
+git add . 
+git commit -m "first commit"
+git push
