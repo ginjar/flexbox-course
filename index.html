@@ -5,9 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding:0;
+        }
+        .container{
+            margin: 0;
+            height: calc(100vh - 20px);
+            width: calc(100vw - 20px);
+            border: 10px solid red;
+            /* this will only affect the img blocks container not 
+            the images */
+            display: flex;
+            /* flex is row set by default*/
+            justify-content: center;
+            flex-direction: column;
+    
+        }
+        .container >.img_blocks{
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+
+           }
+    </style>
 </head>
 <body>
-    <h1>HELLO</h1>
-    <p>This is a list</p>
+    <div class="container">
+        <div class="img_blocks">
+            
+            <img src="https://source.unsplash.com/random/150x150" alt="">
+            <img src="https://source.unsplash.com/random/150x150" alt="">
+            <img src="https://source.unsplash.com/random/150x150" alt="">
+            
+        </div>
+
+    </div>
 </body>
 </html>
